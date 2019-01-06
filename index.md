@@ -1,14 +1,10 @@
-## Owncloud Server Quickstart
+# Owncloud Server Quickstart
 
-This guide is divided into two sections:
-- For Administrators
-  -- sss
-- For Users
-   --
+ 
 
-### For Administrators
+## For Administrators    
 
-#### 
+## For Users
 
 ```markdown
 Syntax highlighted code block
