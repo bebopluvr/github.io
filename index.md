@@ -1,16 +1,18 @@
 # Owncloud Server Quickstart
-This guide is a quick start for administrators and users. For administrators, it describes how to 
+This  guide is a quick start for administrators and users. For administrators, it describes how to 
 - install and configure Owncloud
-- add user access to server with IP addresses and port 80
-- add users
-For users, it explains how
+- enable users to connect to Owncloud servers using server IP addresses and port 8080
+- add user accounts
+
+For users, it explains how to
 - connect to Owncloud servers using desktop or mobile clients
 
 ## For Administrators
 
 ### Installing and Configuring Owncloud Serverw
 
-### Adding  s IP address and port 8080?
+### Enabling Users to Connect to Owncloud Servers Using IP addresses and port 8080
+
 ### Adding user accounts
 
 ## For Users
