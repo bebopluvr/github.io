@@ -1,14 +1,21 @@
-## Owncloud Server Quickstart
+# Owncloud Server Quickstart
 
 This guide is divided into two sections:
 - For Administrators
-  -- sss
+  - sub1 
 - For Users
-   --
+   - sub2
 
-### For Administrators
+## For Administrators
 
-#### 
+### Installing and Configuring Owncloud Servers
+
+
+
+## For Users
+
+
+
 
 ```markdown
 Syntax highlighted code block
