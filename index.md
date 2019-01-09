@@ -19,7 +19,7 @@ Owncloud supports a broad array of system configurations. See [System Requiremen
 ### Connecting to Owncloud servers using mobile clients
 
 ## Troubleshooting
-If you are having problems, see the [General Troubleshooting])(https://doc.owncloud.org/server/10.0/admin_manual/issues/general_troubleshooting.html) and the [Owncloud Forums](https://central.owncloud.org/).
+If you are having problems, see the [General Troubleshooting](https://doc.owncloud.org/server/10.0/admin_manual/issues/general_troubleshooting.html) and the [Owncloud Forums](https://central.owncloud.org/).
 
 
 
