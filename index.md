@@ -16,7 +16,13 @@ Owncloud supports a broad array of system configurations. See [System Requiremen
 ### Enabling Users to Connect to Owncloud Servers Using IP addresses and port 8080
 
 ### Adding user accounts
+Follow these steps to add new users:
+1. Navigate to the User management page of your ownCloud Web UI.
+2. Enter the new user’s Login Name and their initial Password
+3. Optionally, assign Groups memberships
+4. Click *Create*.
 
+ 
 ## For Users
 ### Connecting to Owncloud servers using desktop clients
 ### Connecting to Owncloud servers using mobile clients
