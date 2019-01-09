@@ -3,12 +3,13 @@ This  guide is a quick start for administrators and users. For administrators, i
 - enable users to connect to Owncloud servers using server IP addresses and port 8080
 - add user accounts
 
-For users, it explains how to
-- connect to Owncloud servers using desktop or mobile clients
+For users, it explains how to connect to Owncloud servers using desktop or mobile clients
 
 ## For Administrators
 ### System Requirements
 Owncloud supports a broad array of system configurations. See [System Requirements](https://doc.owncloud.org/server/10.0/admin_manual/installation/system_requirements.html#officially-recommended-supported-options) for a complete list of fully supported systems. This quickstart assumes that you have a system that meets requirements.
+
+### Installing and Configuring Owncloud Servers
 
 ### Enabling Users to Connect to Owncloud Servers Using IP addresses and port 8080
 
