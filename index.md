@@ -19,7 +19,7 @@ You must have the following components installed prior to installing and configu
 * Apache 2.4 with prefork [Multi-Processing Module (MPM)](https://doc.owncloud.org/server/10.0/admin_manual/installation/source_installation.html#apache-mpm-label) and mod_php
 
 ### Installing and Configuring ownCloud Servers
-#### Enagle and Install Required Extensions
+#### Enable and Install Required Extensions
 1. Enable the RHEL Server 7 repository
 
      `subscription-manager repos --enable rhel-server-rhscl-7-eus-rpms`
