@@ -32,7 +32,7 @@ You must have the following components installed prior to installing and configu
 #### Install ownCloud
 Follow these steps:
 1. Download the archive of the laownCloud version:
-2. Go to the ownCloud Download Page.
+2. Go to the [ownCloud Download Page](https://owncloud.org/download/).
 3. Go to **Download ownCloud Server > Download > Archive file for server owners** and download either the `tar.bz2` or `.zip` archive.
 This downloads a file named `owncloud-x.y.z.tar.bz2` or `owncloud-x.y.z.zip` (where `x.y.z` is the version number).
 4. Download its corresponding checksum file, e.g. owncloud-x.y.z.tar.bz2.md5, or owncloud-x.y.z.tar.bz2.sha256.
