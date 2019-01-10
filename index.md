@@ -89,11 +89,15 @@ You must whitelist all URLs used to access your ownCloud server in your config.p
 A typical configuration looks like this:
 
 'trusted_domains' => [
+
    0 => 'localhost',
+   
    1 => 'server1.example.com',
+   
    2 => '192.168.1.50',
 ],
-The loopback address, 127.0.0.1, is automatically whitelisted, so as long as you have access to the physical server you can always log in. In the event that a load-balancer is in place, there will be no issues as long as it sends the correct X-Forwarded-Host header.  
+
+The loopback address, 127.0.0.1, is automatically whitelisted, so as long as you have access to the physical server you can always log in. In the event that a load-balancer is in place, there are no issues as long as it sends the correct X-Forwarded-Host header.  
 
 ### Enabling Users to Connect to ownCloud Servers Using IP addresses and port 8080
 
@@ -103,8 +107,11 @@ Follow these steps to add new users:
 2. Enter the new user’s Login Name and their initial Password.
 3. Optionally, assign Groups memberships.
 4. Click **Create**.
+Login names may contain letters (a-z, A-Z), numbers (0-9), dashes (-), underscores (_ \) periods (.) and at signs (@). After creating the user, you may fill in their Full Name if it is different than the login name, or leave it for the user to complete.
+
+If you have checked **Send email to new user** in the control panel on the lower left sidebar, you may also enter the new user’s email address, and ownCloud will automatically send them a notification with their new login information. You may edit this email using the email template editor on your Admin page.
  
-## For Users
+## For Users.
 ### Connecting to ownCloud servers using desktop clients
 ### Connecting to ownCloud servers using mobile clients
 
