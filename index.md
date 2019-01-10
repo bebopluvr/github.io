@@ -59,11 +59,10 @@ This unpacks to a single owncloud directory.
 9. Copy the ownCloud directory to its final destination. When you are running the Apache HTTP server, you may safely install ownCloud in your Apache document root:
       `cp -r owncloud /path/to/webserver/document-root
       
-where `/path/to/webserver/document-root` is replaced by the document root of your Web server:
-
+   where `/path/to/webserver/document-root` is replaced by the document root of your Web server:
       `cp -r owncloud /var/www`
       
-On other HTTP servers, we recommend installing ownCloud outside of the document root.
+   On other HTTP servers, we recommend installing ownCloud outside of the document root.
 
 #### Configure Apache Web Server
 The Apache HTTP Server provides an open-source HTTP server with the current HTTP standards.
