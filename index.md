@@ -27,7 +27,7 @@ You must have the following components installed prior to installing and configu
 `sudo yum install httpd mariadb-server php72 php72-php \
   php72-php-gd php72-php-mbstring php72-php-mysqlnd`
   
-Optional Extensions¶
+###### Optional Extensions¶
 `sudo yum install -y epel-release http://rpms.remirepo.net/enterprise/remi-release-7.rpm yum-utils \
   && sudo yum-config-manager --enable remi-php72 \
   && sudo yum update -y \
