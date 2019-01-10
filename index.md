@@ -21,44 +21,48 @@ You must have the following components installed prior to installing and configu
 ### Installing and Configuring ownCloud Servers
 #### Enagle and Install Required Extensions
 1. Enable the RHEL Server 7 repository
+
 `subscription-manager repos --enable rhel-server-rhscl-7-eus-rpms`
 
 2. Install the required packages
+
 `sudo yum install httpd mariadb-server php72 php72-php \
-  php72-php-gd php72-php-mbstring php72-php-mysqlnd`
+  php72-php-gd php72-php-mbstring test php72-php-mysqlnd`
     
 #### Install ownCloud
 Follow these steps:
-1. Download the archive of the latest ownCloud version:
+1. Download the archive of the laownCloud version:
 2. Go to the ownCloud Download Page.
 3. Go to **Download ownCloud Server > Download > Archive file for server owners** and download either the `tar.bz2` or `.zip` archive.
 This downloads a file named `owncloud-x.y.z.tar.bz2` or `owncloud-x.y.z.zip` (where `x.y.z` is the version number).
 4. Download its corresponding checksum file, e.g. owncloud-x.y.z.tar.bz2.md5, or owncloud-x.y.z.tar.bz2.sha256.
 5. Verify the MD5 or SHA256 sum:
 
-`md5sum -c owncloud-x.y.z.tar.bz2.md5 < owncloud-x.y.z.tar.bz2
-sha256sum -c owncloud-x.y.z.tar.bz2.sha256 < owncloud-x.y.z.tar.bz2
-md5sum  -c owncloud-x.y.z.zip.md5 < owncloud-x.y.z.zip
-sha256sum  -c owncloud-x.y.z.zip.sha256 < owncloud-x.y.z.zip`
+    `md5sum -c owncloud-x.y.z.tar.bz2.md5 < owncloud-x.y.z.tar.bz2
+     sha256sum -c owncloud-x.y.z.tar.bz2.sha256 < owncloud-x.y.z.tar.bz2
+     md5sum  -c owncloud-x.y.z.zip.md5 < owncloud-x.y.z.zip
+     sha256sum  -c owncloud-x.y.z.zip.sha256 < owncloud-x.y.z.zip`
 
 6. (Optional) You may also verify the PGP signature:
-`wget https://download.owncloud.org/community/owncloud-x.y.z.tar.bz2.asc
-wget https://owncloud.org/owncloud.asc
-gpg --import owncloud.asc
-gpg --verify owncloud-x.y.z.tar.bz2.asc owncloud-x.y.z.tar.bz2`
+     `wget https://download.owncloud.org/community/owncloud-x.y.z.tar.bz2.asc
+      wget https://owncloud.org/owncloud.asc
+      gpg --import owncloud.asc
+      gpg --verify owncloud-x.y.z.tar.bz2.asc owncloud-x.y.z.tar.bz2`
 
 7. Extract the archive contents. 
 
 8. Run the appropriate unpacking command for your archive type:
-`tar -xjf owncloud-x.y.z.tar.bz2
-unzip owncloud-x.y.z.zip`
+     `tar -xjf owncloud-x.y.z.tar.bz2
+      unzip owncloud-x.y.z.zip`
 This unpacks to a single owncloud directory. 
 
 9. Copy the ownCloud directory to its final destination. When you are running the Apache HTTP server, you may safely install ownCloud in your Apache document root:
-`cp -r owncloud /path/to/webserver/document-root
+      `cp -r owncloud /path/to/webserver/document-root
+      
 where `/path/to/webserver/document-root` is replaced by the document root of your Web server:
 
-`cp -r owncloud /var/www`
+      `cp -r owncloud /var/www`
+      
 On other HTTP servers, we recommend installing ownCloud outside of the document root.
 
 #### Configure Apache Web Server
