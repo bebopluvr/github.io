@@ -16,9 +16,16 @@ You must have the following components installed prior to installing and configu
 * PostgreSQL
 * SQLite
 #### Webserver
-* Apache 2.4 with prefork [Multi-Processing Module (MPM)](https://doc.owncloud.org/server/10.0/admin_manual/installation/source_installation.html#apache-mpm-label) and mod_php
-
+* Apache 2.4 with prefork [Multi-Processing Module (MPM)](https://doc.owncloud.org/server/10.0/admin_manual/installation/source_installation.html#apache-mpm-label) and mod_phpn
 ### Installing and Configuring ownCloud Servers
+Complete the following tasks to install and configure an ownCloud server:
+* Enable and install required extensions
+* Install ownCloud
+* Configure an Apache web server
+* Run the Installation Wizard
+* Set Strong Directory Permissions
+* Specify Trusted Domains
+
 #### Enable and Install Required Extensions
 1. Enable the RHEL Server 7 repository
 
@@ -64,7 +71,7 @@ This unpacks to a single owncloud directory.
       
    On other HTTP servers, we recommend installing ownCloud outside of the document root.
 
-#### Configure Apache Web Server
+#### Configure an Apache Web Server
 The Apache HTTP Server provides an open-source HTTP server with the current HTTP standards.
 In Red Hat Enterprise Linux, the httpd package provides the Apache HTTP Server. Run the `rpm -q httpd` command to see if the httpd package is installed. If it is not installed, run the following command as the root user to install it:
 `yum install httpd`
@@ -82,7 +89,7 @@ Please know that ownCloud’s data directory must be exclusive to ownCloud and n
 #### Set Strong Directory Permissions
 After completing the installation, you must immediately set the directory permissions in your ownCloud installation as strictly as possible for stronger security. After you do so, your ownCloud server will be ready to use.
 
-####  Trusted Domains¶
+####  Specify Trusted Domains¶
 You must whitelist all URLs used to access your ownCloud server in your config.php file, under the trusted_domains setting. Users are allowed to log into ownCloud only when they point their browsers to a URL that is listed in the trusted_domains setting. This setting is important when changing or moving to a new domain name. You may use IP addresses and domain names.
 
 A typical configuration looks like this:
