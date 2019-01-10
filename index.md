@@ -10,13 +10,16 @@ For users, it explains how to connect to ownCloud servers using desktop or mobil
 You must have the following components installed prior to installing and configuring ownCloud servers.
 #### Operating System
 * Red Hat Enterprise Linux 6 and 7 (64-bit only)
+
 #### Database
 * MySQL or MariaDB 5.5+
 * Oracle 11g
 * PostgreSQL
 * SQLite
+
 #### Webserver
 * Apache 2.4 with prefork [Multi-Processing Module (MPM)](https://doc.owncloud.org/server/10.0/admin_manual/installation/source_installation.html#apache-mpm-label) and mod_phpn
+
 ### Installing and Configuring ownCloud Servers
 Complete the following tasks to install and configure an ownCloud server:
 * Enable and install required extensions
