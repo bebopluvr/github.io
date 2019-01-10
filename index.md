@@ -22,12 +22,12 @@ You must have the following components installed prior to installing and configu
 #### Enagle and Install Required Extensions
 1. Enable the RHEL Server 7 repository
 
-`subscription-manager repos --enable rhel-server-rhscl-7-eus-rpms`
+     `subscription-manager repos --enable rhel-server-rhscl-7-eus-rpms`
 
 2. Install the required packages
 
-`sudo yum install httpd mariadb-server php72 php72-php \
-  php72-php-gd php72-php-mbstring test php72-php-mysqlnd`
+      `sudo yum install httpd mariadb-server php72 php72-php \
+       php72-php-gd php72-php-mbstring test php72-php-mysqlnd`
     
 #### Install ownCloud
 Follow these steps:
