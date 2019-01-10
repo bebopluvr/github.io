@@ -81,10 +81,11 @@ In Red Hat Enterprise Linux, the httpd package provides the Apache HTTP Server. 
 #### Run the Installation Wizard
 After restarting Apache, you must complete your installation by running either the Graphical Installation Wizard or on the command line with the occ command. To enable this, temporarily change the ownership on your ownCloud directories to your HTTP user (see Set Strong Directory Permissions to learn how to find your HTTP user):
 
-chown -R www-data:www-data /var/www/owncloud/
+`chown -R www-data:www-data /var/www/owncloud/`
+
 Admins of SELinux-enabled distributions may need to write new SELinux rules to complete their ownCloud installation; see SELinux.
 
-To use occ see Command Line Installation. To use the graphical Installation Wizard see The Installation Wizard.
+To use `occ` see Command Line Installation. To use the graphical Installation Wizard see The Installation Wizard.
 
 Please know that ownCloud’s data directory must be exclusive to ownCloud and not be modified manually by any other process or user.
 
@@ -96,14 +97,11 @@ You must whitelist all URLs used to access your ownCloud server in your config.p
 
 A typical configuration looks like this:
 
-'trusted_domains' => [
-
-   0 => 'localhost',
-   
-   1 => 'server1.example.com',
-   
+`'trusted_domains' => [
+   0 => 'localhost',   
+   1 => 'server1.example.com',   
    2 => '192.168.1.50',
-],
+],`
 
 The loopback address, 127.0.0.1, is automatically whitelisted, so as long as you have access to the physical server you can always log in. In the event that a load-balancer is in place, there are no issues as long as it sends the correct X-Forwarded-Host header.  
 
