@@ -5,8 +5,18 @@ This  guide is a quick start for administrators and users. For administrators, i
 
 For users, it explains how to connect to Owncloud servers using desktop or mobile clients
 
-## For Administrators
+## For AdministraDtors
 ### System Requirements
+You must have the following components installed prior to installing and configuring Owncloud servers.
+#### Operating System:
+* Red Hat Enterprise Linux 6 and 7
+#### Database
+* MySQL or MariaDB 5.5+
+* Oracle 11g
+* PostgreSQL
+* SQLite
+#### Webserver
+* Apache 2.4 with prefork [Multi-Processing Module (MPM)](https://doc.owncloud.org/server/10.0/admin_manual/installation/source_installation.html#apache-mpm-label) and mod_php
 
 Owncloud supports a broad array of system configurations. See [System Requirements](https://doc.owncloud.org/server/10.0/admin_manual/installation/system_requirements.html#officially-recommended-supported-options) for a complete list of fully supported systems. This quickstart assumes that you have a system that meets requirements.
 
@@ -18,9 +28,9 @@ Owncloud supports a broad array of system configurations. See [System Requiremen
 ### Adding user accounts
 Follow these steps to add new users:
 1. Navigate to the User management page of your ownCloud Web UI.
-2. Enter the new user’s Login Name and their initial Password
-3. Optionally, assign Groups memberships
-4. Click *Create*.
+2. Enter the new user’s Login Name and their initial Password.
+3. Optionally, assign Groups memberships.
+4. Click **Create**.
 
  
 ## For Users
