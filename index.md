@@ -1,13 +1,13 @@
 This  guide is a quick start for administrators and users. For administrators, it describes how to 
-- install and configure Owncloud
-- enable users to connect to Owncloud servers using server IP addresses and port 8080
+- install and configure ownCloud
+- enable users to connect to ownCloud servers using server IP addresses and port 8080
 - add user accounts
 
-For users, it explains how to connect to Owncloud servers using desktop or mobile clients
+For users, it explains how to connect to ownCloud servers using desktop or mobile clients
 
 ## For Administrators
 ### System Requirements
-You must have the following components installed prior to installing and configuring Owncloud servers.
+You must have the following components installed prior to installing and configuring ownCloud servers.
 #### Operating System
 * Red Hat Enterprise Linux 6 and 7 (64-bit only)
 #### Database
@@ -18,10 +18,10 @@ You must have the following components installed prior to installing and configu
 #### Webserver
 * Apache 2.4 with prefork [Multi-Processing Module (MPM)](https://doc.owncloud.org/server/10.0/admin_manual/installation/source_installation.html#apache-mpm-label) and mod_php
 
-### Installing and Configuring Owncloud Servers
+### Installing and Configuring ownCloud Servers
 #### Required Extensions
 ###### Enable the RHEL Server 7 repository
-subscription-manager repos --enable rhel-server-rhscl-7-eus-rpms
+`subscription-manager repos --enable rhel-server-rhscl-7-eus-rpms`
 
 ###### Install the required packages
 `sudo yum install httpd mariadb-server php72 php72-php \
@@ -35,7 +35,7 @@ Optional Extensions¶
     redis php72-php-pecl-redis php72-php-ldap \
     mariadb-server mariadb`
 
-### Enabling Users to Connect to Owncloud Servers Using IP addresses and port 8080
+### Enabling Users to Connect to ownCloud Servers Using IP addresses and port 8080
 
 ### Adding user accounts
 Follow these steps to add new users:
@@ -43,11 +43,10 @@ Follow these steps to add new users:
 2. Enter the new user’s Login Name and their initial Password.
 3. Optionally, assign Groups memberships.
 4. Click **Create**.
-
  
 ## For Users
-### Connecting to Owncloud servers using desktop clients
-### Connecting to Owncloud servers using mobile clients
+### Connecting to ownCloud servers using desktop clients
+### Connecting to ownCloud servers using mobile clients
 
 ## Troubleshooting
 If you are having problems, see [General Troubleshooting](https://doc.owncloud.org/server/10.0/admin_manual/issues/general_troubleshooting.html) and the [Owncloud Forums](https://central.owncloud.org/).
