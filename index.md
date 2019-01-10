@@ -19,15 +19,15 @@ You must have the following components installed prior to installing and configu
 * Apache 2.4 with prefork [Multi-Processing Module (MPM)](https://doc.owncloud.org/server/10.0/admin_manual/installation/source_installation.html#apache-mpm-label) and mod_php
 
 ### Installing and Configuring ownCloud Servers
-#### Required Extensions
-###### Enable the RHEL Server 7 repository
+#### Enagle and Install Required Extensions
+1. Enable the RHEL Server 7 repository
 `subscription-manager repos --enable rhel-server-rhscl-7-eus-rpms`
 
-###### Install the required packages
+2. Install the required packages
 `sudo yum install httpd mariadb-server php72 php72-php \
   php72-php-gd php72-php-mbstring php72-php-mysqlnd`
     
-### Install ownCloud
+#### Install ownCloud
 Follow these steps:
 1. Download the archive of the latest ownCloud version:
 2. Go to the ownCloud Download Page.
